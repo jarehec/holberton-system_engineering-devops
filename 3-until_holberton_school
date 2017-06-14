@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#prints Holberton School ten times
-i=1
-until [ $i -gt 10 ];
-do
-	echo "Holberton School"
-	let i++
-done
