@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#prints a clock
+i=0
+while ((i<11));
+do
+	echo "Hour: $i"
+	d=1
+	while ((d < 60));
+	do
+		echo $d
+		let d++
+	done
+	let i++
+done
