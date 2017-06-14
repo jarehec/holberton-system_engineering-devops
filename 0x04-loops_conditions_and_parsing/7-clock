@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #prints a clock
 i=0
-while ((i<11));
+while ((i<13));
 do
 	echo "Hour: $i"
 	d=1
