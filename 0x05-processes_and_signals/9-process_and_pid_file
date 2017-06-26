@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#creates file with pid, shows "To infinity and beyond" indefinitely
 echo $$ > /var/run/holbertonscript.pid ;
 while true;
 do
