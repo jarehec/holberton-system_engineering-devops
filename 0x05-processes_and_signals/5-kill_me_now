@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #kills 4-to_infinity_and_beyond process
-kill $(pidof -s bash ./4-to_infinity_and_beyond)
+kill $(ps -aufx | grep ./4-to_infinity_and_beyond | cut -f4 -d" ")
