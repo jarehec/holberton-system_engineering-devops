@@ -2,4 +2,5 @@
 # installs and configures a nginx server
 apt update -y ; apt install nginx -y;
 chmod 666 /usr/share/nginx/html/index.html;
-echo -e 'Holberton School !!!' > /usr/share/nginx/html/index.html
+echo -e 'Holberton School !!!' > /usr/share/nginx/html/index.html;
+service nginx reload
