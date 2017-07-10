@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # installs and configures a nginx server
 sudo apt update -y ; sudo apt install nginx -y;
-chmod 666 /usr/share/nginx/html/index.html;
+sudo chmod 666 /usr/share/nginx/html/index.html;
 sudo echo -e '<!DOCTYPE html>\n<html>\n\t<html>\n\t<title>Hi</title>\n\t</head>\n\t<body>\n\t\t<header>Holberton School !!!</header>\n\t</body>\n</html>' > /usr/share/nginx/html/index.html
