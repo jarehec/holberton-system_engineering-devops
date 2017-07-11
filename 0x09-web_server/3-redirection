@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# redirects /redirect_me to another site
+url="location /redirect_me {\n\treturn 301 http://youtube.com;\n}";
+sed -i "37i $url" /etc/nginx/sites-available/default;
+service nginx reload;
