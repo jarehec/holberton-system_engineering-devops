@@ -5,3 +5,4 @@ service nginx start;
 url="location /redirect_me {\n\treturn 301 http://youtube.com;\n}";
 sed -i "37i $url" /etc/nginx/sites-available/default;
 service nginx reload;
+service nginx restart;
