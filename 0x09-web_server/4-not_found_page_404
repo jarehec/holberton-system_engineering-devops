@@ -2,6 +2,6 @@
 # creates a custom 404 page
 apt install nginx -y;
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html;
-error="error_page 404 /404_page.html;\nlocation = /404_page.html {\n\troot /usr/share/nginx/html;\n\tinternal;\n}";
+error="error_page 404 /404.html;\nlocation = /404.html {\n\troot /usr/share/nginx/html;\n\tinternal;\n}";
 sed -i "45i $error" /etc/nginx/sites-available/default;
 service nginx restart;
