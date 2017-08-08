@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#fixes a Nginx server by changing the port to 80
+sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
+service nginx restart
