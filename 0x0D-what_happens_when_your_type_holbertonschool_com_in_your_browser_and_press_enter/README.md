@@ -1,6 +1,10 @@
 #  Holberton School - 0x0D. What happens when you type holbertonschool.com in your browser and press Enter
 
-
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/LAMP_software_bundle.svg/400px-LAMP_software_bundle.svg.png)
+---
+When you press Enter, your browser will need to know the IP address of the website. The browser first checks it's local DNS cache for the IP. If that information was not previously stored in the DNS cache, the computer checks your ISP's recursive DNS servers. If the recursive DNS servers could not find the IP, they contact one the 13 root name servers. The request is forwarded to the .COM TLD(top level domain server) which will find the authoritative name servers for `holbertonscool.com`. The recurisve DNS server recieves the information from the authoriatative name servers and then gives the host record for `holbertonschool.com` back to the client.
+The browser will open a TCP connection with the web server on port 80
+work in progress...
 
 ## License
 Public Domain, no copyright protection
