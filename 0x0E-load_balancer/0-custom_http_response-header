@@ -5,5 +5,5 @@ apt update;
 apt-get install nginx -y;
 service nginx start;
 header="add_header X-Served-By $HOSTNAME;";
-sed -i "16i $header;" /etc/nginx/nginx.conf
+sed -i "16i $header" /etc/nginx/nginx.conf
 service nginx reload;
