@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# installs and configures a nginx server with http header
+apt update;
+apt-get install nginx -y;
+service nginx start;
+sed -i "16i add_header X-Served-By $HOSTNAME" /etc/ngnix/nginx.conf
+service nginx reload
