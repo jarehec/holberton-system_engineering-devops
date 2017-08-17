@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#installs and configures load balancer(HaProxy >=1.5)
+apt install -y software-properties-common python-software-properties
+add-apt-repository -y ppa:vbernat/haproxy-1.5
+apt update -y
+apt install -y haproxy
+echo "ENABLED=1" >> /etc/default/haproxy
+server_conf="backend web-backend\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\thttp-request set-header X-Forwarded-Port %[dst_port]\n\tserver e48a315dfa92 34.206.234.184:34887 check\n\tserver ab10e90a5c56 34.206.234.184:34893 check"
+echo -e "$server_conf" >> /etc/haproxy/haproxy.cfg
+service rsyslog start
+service haproxy start
