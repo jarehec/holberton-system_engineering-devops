@@ -5,7 +5,8 @@ add-apt-repository -y ppa:vbernat/haproxy-1.5
 apt update -y
 apt install -y haproxy
 echo "ENABLED=1" >> /etc/default/haproxy
-server_conf="listen web-backend *:80\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\thttp-request set-header X-Forwarded-Port %[dst_port]\n\tserver 129-web-01 66.70.184.235:80 check\n\tserver 129-web-02 34.229.113.91:80 check"
+server_conf="listen web-backend *:80\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\tserver 129-web-01 66.70.184.235:80 check\n\tserver 129-web-02 34.229.113.91:80 check"
 echo -e "$server_conf" >> /etc/haproxy/haproxy.cfg
 service rsyslog start
 service haproxy start
+service haproxy reload
