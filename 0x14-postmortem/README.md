@@ -23,7 +23,7 @@ From 02:42 PDT on Monday August 14 2017 to 08:22 August 14 our servers were atta
 * [08:30] - Examine files that were uploaded by the hacker.
 
 ## Root Cause
-The main problem was the configuration of our server. It used the password: `Username1` which is extremely insecure. Also only the password was needed to gain access. The password was changed to a randomly generated string. We also added an extra layer of security by making an RSA private key necessary to access to our servers.
+The main problem was the configuration of our server. Only a single password (`Username1`) was needed to access the Ubuntu user at port 22. That is extremely insecure. The password was changed to a randomly generated string. We also added an extra layer of security by making an RSA private key necessary to access to our servers.
 
 ## Remediation AND Prevention
 To prevent future attacks we installed a clean copy of Alpine Linux instead of Ubuntu as it is more secure. Suspicious IPs are now blocked from connecting to our servers.
