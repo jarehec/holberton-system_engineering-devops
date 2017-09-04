@@ -10,7 +10,7 @@ From 02:42 PDT on Monday August 14 2017 to 08:22 August 14 our servers were atta
 * [03:02] - Monitoring service notifies us that one of our servers was being accessed from an unknown IP address.
 * [03:42] - Several files updated in the upload directory on our server.
 * [04:20] - We notice 3 HTML files edited. The 'sign in' URL redirected toward a fake login page. (`index.html, about.html, downloads.html`)
-* [04:22] - We change the password to our server.
+* [04:22] - We changed the password to our server.
 * [04:30] - Copied the files the hacker uploaded for later examination.
 * [05:11] - We stop the nginx process on web servers and verify that no unknown users have access.
 * [05:14] - Alpine Linux is installed on our servers.
