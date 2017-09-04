@@ -18,7 +18,7 @@ From 02:42 PDT on Monday August 14 2017 to 08:22 August 14 our servers were atta
 * [06:40] - Configure servers to only accept users that have a private key.
 * [06:42] - Verify that users cannot login without the private key. (Success)
 * [06:45] - Updated firewall rules.
-* [06:50] - Penetration test our server to make sure that the new configuration is secure.
+* [06:50] - Penetration test our servers to make sure that the new configuration is secure.
 * [08:22] - Restarted web server
 * [08:30] - Examine files that were uploaded by the hacker.
 
