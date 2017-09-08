@@ -8,7 +8,7 @@ The focus of this project is to learn:
 * Ubuntu 14.04 LTS
 
 ## File Descriptions
-0-strace_is_your_friend.pp
+* 0-strace_is_your_friend.pp
 	* Fixes container to fix apache2 500 error
 ## License
 Public Domain, no copyright protection
