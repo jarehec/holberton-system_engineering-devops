@@ -1,0 +1,2 @@
+#!/bin/bash
+cat -n | sed -n 1~2p | cut -f2

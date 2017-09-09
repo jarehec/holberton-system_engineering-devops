@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lR | grep 4096 | wc -l
