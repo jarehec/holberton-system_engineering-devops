@@ -42,7 +42,7 @@ server {
 	}
 	location /airbnb-onepage {
 		include proxy_params;
-		rewrite ^/airbnb-onepage(*.) /$1 break;
+		rewrite ^/airbnb-onepage(.*) /$1 break;
 		proxy_pass http://localhost:8001;
 	}
 	location /airbnb-dynamic/ {
