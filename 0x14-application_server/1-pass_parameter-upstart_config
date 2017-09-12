@@ -1,4 +1,5 @@
-description "Gunicorn app server running 0-hello_route"
+#Gunicorn app server running 6-number_odd_or_even
+description "Gunicorn app server running 6-number_odd_or_even"
 
 start on runlevel [2345]
 stop on runlevel [!2345]
