@@ -7,6 +7,8 @@
 ## File Descriptions
 * 0-sniffing
 	* password sniffed with tcpdump
+* 1-dictionary_attack
+	* password brutefored with hydra
 
 ## License
 Public Domain, no copyright protection
