@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-returns information about employee TODO list progress basedon id
+returns information about employee TODO list progress based on id
 """
 from requests import get
 from sys import argv
@@ -20,4 +20,4 @@ if __name__ == '__main__':
               format(name, done, len(tasks)))
         for i in tasks:
             if i.get('completed') is True:
-                print("\t{}".format(i.get('title')))
+                print("\t {}".format(i.get('title')))
