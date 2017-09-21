@@ -1,7 +1,7 @@
-#writes a 'Hello Holberton' in /var/www/html
+# fixes typo in /var/www/html/wp-settings
 
-file { 'create_index':
-ensure  =>  file,
-path    => '/var/www/html/index.html',
-content => 'Hello Holberton'
+exec { 'fix typo':
+command  => 'sed \'s/class-wp-locale.phpp/class-wp-locale.php/\' /var/www/html/wp-settings.php',
+path     => ['/usr/bin', '/bin', '/usr/sbin'],
+provider => 'shell'
 }
