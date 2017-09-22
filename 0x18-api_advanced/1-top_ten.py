@@ -11,6 +11,6 @@ def top_ten(subreddit):
                   headers={'User-agent': 'hAxr'}, params={'limit': 10},
                   allow_redirects=False).json()
         for item in res['data']['children']:
-            print(item.get('data').get('title'))
+            print(item['data']['title'])
     except:
         print('None')
