@@ -7,7 +7,7 @@ from requests import get
 
 def top_ten(subreddit):
     try:
-        res = get("https://www.reddit.com/r/{}/top.json".format(subreddit),
+        res = get("https://www.reddit.com/r/{}/hot.json".format(subreddit),
                   headers={'User-agent': 'hAxr'}, allow_redirects=False).json()
         i = 0
         for item in res.get('data').get('children'):
