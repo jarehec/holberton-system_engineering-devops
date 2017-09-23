@@ -5,7 +5,7 @@ returns a list of all titles for a given subreddit
 from requests import get
 
 
-def recurse(subreddit, hot_list=[], after=None):
+def recurse(subreddit, hot_list=[], after=''):
     try:
         url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
         res = get(url, headers={'User-agent': 'hAxr'}, params={'after': after},
@@ -17,4 +17,4 @@ def recurse(subreddit, hot_list=[], after=None):
             hot_list.append(recurse(subreddit, hot_list, res['data']['after']))
         return hot_list
     except:
-        pass
+        return None
