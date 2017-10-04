@@ -1,6 +1,5 @@
 #  Holberton School - 0x1A. MySQL
 
-
 ## Concepts learned from this project
 * What is the main role of a database
 What is a database replica
@@ -17,6 +16,8 @@ What is a database replica
     * MySQL primary configuration
 * 0-mysql_configuration_replica
     * MySQL replica configuration
+* 1-mysql_backup
+	* generates a MySQL dump and creates a compressed archive out of it
 
 ### Information
 * [What is a primary(master) replica(slave) cluster](https://www.digitalocean.com/community/tutorials/how-to-choose-a-redundancy-plan-to-ensure-high-availability#sql-replication)
